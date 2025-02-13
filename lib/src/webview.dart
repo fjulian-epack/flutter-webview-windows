@@ -547,6 +547,7 @@ class WebviewController extends ValueNotifier<WebviewValue> {
   /// Sends a Pointer (Touch) update
   Future<void> _setPointerUpdate(WebviewPointerEventKind kind, int pointer,
       Offset position, double size, double pressure) async {
+    await Future.delayed(Duration(milliseconds: 92));
     if (_isDisposed) {
       return;
     }
